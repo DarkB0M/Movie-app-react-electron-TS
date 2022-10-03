@@ -13,7 +13,7 @@ async function HandleSearch() {
   let RandomNumber = Math.floor(Math.random() * 999) + 1;
   const response = await axios
   .get(
-    `https://api.themoviedb.org/3/movie/${RandomNumber}?api_key=${'e002ee5e60ea9167cb0e71f71c8c7154'}`
+    `https://api.themoviedb.org/3/movie/${RandomNumber}?api_key=${'Your IMDB KEY'}`
     ).then((async response => {
       setName(response.data.title)
       setDescription(response.data.overview)
